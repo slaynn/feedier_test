@@ -2,9 +2,13 @@
 
 0 * * * * php artisan feedbackImport:hourly
 
-## frontend for submitting a feedback
+## frontend for submitting a feedback with login guard
 
-accessible on the route /feedback_submission
+build the frontend with command :
+```vite```
+
+launch the project with
+```php artisan serve```
 
 ## weekly report
 
