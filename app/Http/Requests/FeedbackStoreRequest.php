@@ -23,7 +23,6 @@ class FeedbackStoreRequest extends FormRequest
     {
         return [
             'comment' => 'required',
-            'rating' => 'required'
         ];
     }
 

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('feedbacks', function (Blueprint $table) {
             $table->id();
             $table->text('comment');
-            $table->integer('rating');
+            $table->integer('rating')->nullable();
             $table->date('start_date');
             $table->json('target')->nullable();
             $table->string('source');

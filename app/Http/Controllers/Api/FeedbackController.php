@@ -14,7 +14,6 @@ class FeedbackController extends Controller
         $data = $request->validated();
         return Feedback::create([
             'comment' => $data['comment'],
-            'rating' => $data['rating'],
             'start_date' => Carbon::now(),
             'source' => 'webApp'
         ]);
